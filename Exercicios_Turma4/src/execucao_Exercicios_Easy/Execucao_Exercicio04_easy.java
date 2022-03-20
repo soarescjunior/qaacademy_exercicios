@@ -6,8 +6,8 @@ public class Execucao_Exercicio04_easy  {
 
     public static void main(String[] args) {
 
-        Exercicio04 ex4 = new Exercicio04();
-        ex4.dobroDoNumeroInteiroDigitado();
+        Exercicio04 executaExercicio04 = new Exercicio04();
+       System.out.println(executaExercicio04.dobroDoNumeroInteiroDigitado(10));
     }
   
 }
