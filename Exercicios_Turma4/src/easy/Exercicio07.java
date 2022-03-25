@@ -12,24 +12,29 @@ public class Exercicio07 {
     // De R$ 3.134,41 até R$ 6.101,06      14%
 
 
-    public double calcularExibirValorINSS(double salario) {
-            
-        if(salario <= 1045.00){
-            return(salario * 0.0075);
+    public String calcularExibirValorINSS(double salario) {
+            double valorINSS;
+        if(salario >= 0.00 && salario <= 1045.00){
+            valorINSS = salario * 0.0075;
+            return String.format("O valor a ser pago no INSS é: R$ %.2f" , valorINSS);
         }else;
         if(salario >= 1045.01 && salario <= 2089.60){
-           return(salario * 0.09);
+            valorINSS = salario * 0.09;
+           return String.format("O valor a ser pago no INSS é: R$ %.2f", valorINSS);
         }else;
         if( salario >= 2089.61 && salario <= 3134.40){
-            return(salario * 0.12 );
+            valorINSS = salario * 0.12;
+            return String.format("O valor a ser pago no INSS é: R$ %.2f", valorINSS);
         }else;
         if(salario >= 3134.41 && salario <= 6101.06){
-            return(salario * 0.14);
+            valorINSS = salario * 0.14;
+            return String.format("O valor a ser pago no INSS é: R$ %.2f", valorINSS);
         }else;
         if(salario >= 6101.07){
-            return(6101.07 * 0.14 );
+            valorINSS = 6101.07 * 0.14;
+            return String.format("O valor a ser pago no INSS é: R$ %.2f", valorINSS);
         }
-        return salario;
+        return "Valor digitado invalido";
          
     }
     
