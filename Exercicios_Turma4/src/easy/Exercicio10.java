@@ -1,6 +1,6 @@
 package easy;
 
-import javax.swing.JOptionPane;
+import java.text.DecimalFormat;
 
 public class Exercicio10 {
 
@@ -10,24 +10,25 @@ public class Exercicio10 {
     // juros.
     // Considerando que a remuneração será no regime de juros simples.
 
-    public static void main(String[] args) {
+    public String calculoValorInvestido(double valorInvestido) {
 
-        String valorInvestimento = JOptionPane.showInputDialog("Digite o valor do investimento: ");
-        double valorInvestido, juros, taxa = 0, totalComJuros = 0;
+        DecimalFormat frmt = new DecimalFormat("0.00");
+        double jurosAoano, taxaAoAno = 0, totalComJuros = 0;
         int ano = 1;
-
-        valorInvestido = Double.parseDouble(valorInvestimento);
-        System.out.printf("Valor investido inicialmente é: R$ %.2f %n", valorInvestido);
-
-        while (ano <= 10) {
-            juros = valorInvestido * 0.05;
-            taxa = juros * ano;
-            totalComJuros = taxa + valorInvestido;
-            ano++;
+        if (valorInvestido <= 0.00) {
+            return "Valor digitado de investimento é invalido.";
+        } else {
+            while (ano <= 10) {
+                jurosAoano = valorInvestido * 0.05;
+                taxaAoAno = jurosAoano * ano;
+                totalComJuros = taxaAoAno + valorInvestido;
+                ano++;
+            }
+            // System.out.printf("Valor do total do juros é: R$ %.2f %n", taxa);
+            // System.out.printf("Valor do total com juros é: R$ %.2f %n", totalComJuros);
+            return ("Valor investido foi: R$ " + (frmt.format(valorInvestido)) + "\n" + "Valor do total do juros é: R$ "
+                    + (frmt.format(taxaAoAno)) + "\n" + "Valor do total com juros é: R$ " + (frmt.format(totalComJuros)));
         }
-        System.out.printf("Valor do total do juros é: R$ %.2f %n", taxa);
-        System.out.printf("Valor do total com juros é: R$ %.2f %n", totalComJuros);
-
     }
 
 }
