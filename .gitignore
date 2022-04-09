@@ -1,5 +1,12 @@
- .idea/
-        .vscode/
-        out/
-        .iml/
-        .xml/
+/target/
+.classpath
+../pom.xml
+../.classpath
+../.project
+../.settings/
+.classpath
+.gitignore
+.project
+.settings/
+bin/.gitignore
+         
