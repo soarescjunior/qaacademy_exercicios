@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Execucao_Exercicios10_medium",
+            "request": "launch",
+            "mainClass": "execuacao_Exercicios_Medium.Execucao_Exercicios10_medium",
+            "projectName": "exercicios_qaacademy"
+        },
+        {
+            "type": "java",
+            "name": "Launch Execucao_Exercicios09_medium",
+            "request": "launch",
+            "mainClass": "execuacao_Exercicios_Medium.Execucao_Exercicios09_medium",
+            "projectName": "exercicios_qaacademy"
+        },
+        {
+            "type": "java",
+            "name": "Launch Execucao_Exercicios10_medium",
+            "request": "launch",
+            "mainClass": "execuacao_Exercicios_Medium.Execucao_Exercicios10_medium",
+            "projectName": "CursoQAAcademy_572f861a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Execucao_Exercicios09_medium",
+            "request": "launch",
+            "mainClass": "execuacao_Exercicios_Medium.Execucao_Exercicios09_medium",
+            "projectName": "CursoQAAcademy_572f861a"
+        },
+        {
+            "type": "java",
             "name": "Launch Execucao_Exercicio07_medium",
             "request": "launch",
             "mainClass": "execuacao_Exercicios_Medium.Execucao_Exercicio07_medium",
