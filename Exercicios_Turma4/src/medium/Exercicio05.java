@@ -1,7 +1,5 @@
 package medium;
 
-import javax.swing.JOptionPane;
-
 public class Exercicio05 {
 
     // Exercício 5 - Faça um algoritmo para ler 5 números, verificar e exibir,
@@ -12,16 +10,16 @@ public class Exercicio05 {
         int numeroDigitado, i = 1, valorMenor = 0;
 
         while (i < 5) {
-            
-            numeroDigitado = vetorNumeros[i-1];
-            if (numeroDigitado < valorMenor || i==1) {
+
+            numeroDigitado = vetorNumeros[i - 1];
+            if (numeroDigitado < valorMenor || i == 1) {
                 valorMenor = numeroDigitado;
             } else {
 
             }
             i++;
         }
-        
+
         return valorMenor;
     }
 }
