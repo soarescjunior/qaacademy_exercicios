@@ -7,18 +7,23 @@ public class Exercicio07 {
   // Exercício 7 - Faça um algoritmo para ler todos os meses do ano, armazene em
   // um vetor.
 
-  public static void main(String[] args) {
+  public String[] MesesDoAno() {
 
     String[] vetorMes = new String[12];
-    String mesDigitado;
-    int i = 0;
+    vetorMes[0] = "Janeiro";
+    vetorMes[1] = "Fevereiro";
+    vetorMes[2] = "Marco";
+    vetorMes[3] = "Abril";
+    vetorMes[4] = "Maio";
+    vetorMes[5] = "Junho";
+    vetorMes[6] = "Julho";
+    vetorMes[7] = "Agosto";
+    vetorMes[8] = "Setembro";
+    vetorMes[9] = "Outubro";
+    vetorMes[10] = "Novembro";
+    vetorMes[11] = "Dezembro";
 
-    while (i <= 11) {
-      mesDigitado = JOptionPane.showInputDialog("digite o mes");
-      vetorMes[i] = mesDigitado;
-      i++;
-
+    return vetorMes;
     }
-
+  
   }
-}
