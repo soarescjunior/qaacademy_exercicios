@@ -1,5 +1,4 @@
 package execuacao_Exercicios_Medium;
-import medium.Exercicio07;
 import medium.Exercicio09;
 
 public class Execucao_Exercicios09_medium {

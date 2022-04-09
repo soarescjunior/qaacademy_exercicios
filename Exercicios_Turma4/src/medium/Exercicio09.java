@@ -1,7 +1,4 @@
 package medium;
-
-import javax.swing.JOptionPane;
-
 public class Exercicio09 {
 
         // Exercício 09 - Faça um algoritmo para: Criar dois vetores.Em um vetor:
