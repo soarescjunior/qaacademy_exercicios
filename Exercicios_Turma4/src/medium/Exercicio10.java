@@ -1,27 +1,32 @@
 package medium;
 
 public class Exercicio10 {
+    // public int calcularFibonacci(int termo) {
+    //     int i = 2;
+    //     int numDigitado = termo;
+    //     int[] vetFibonacci = new int[numDigitado];
+    //     vetFibonacci[0] = 0;
+    //     vetFibonacci[1] = 1;
+    //     while (i < numDigitado) {
+    //         vetFibonacci[i] = vetFibonacci[i - 1] + vetFibonacci[i - 2];
+    //         i++;
+    //     }
+    //     return vetFibonacci[termo - 1];
 
-    public static void main(String[] args) {
+    // }
 
+    public int[] calcularFibonacciVetor(int termo) {
         int i = 2;
-        int[] vetorFibonacci = new int[10];
-
-        vetorFibonacci[0] = 0;
-        System.out.println(vetorFibonacci[0]);
-        vetorFibonacci[1] = 1;
-        System.out.println(vetorFibonacci[1]);
-
-        while(i<=9){
-            vetorFibonacci[i]= vetorFibonacci[i-1] + vetorFibonacci[i-2];
-			System.out.println(vetorFibonacci[i]);
-			i++;
-            
+        int numDigitado = termo;
+        int[] vetFibonacci = new int[numDigitado];
+        vetFibonacci[0] = 0;
+        vetFibonacci[1] = 1;
+        while (i < numDigitado) {
+            vetFibonacci[i] = vetFibonacci[i - 1] + vetFibonacci[i - 2];
+            i++;
         }
+        return vetFibonacci;
 
     }
 
-    
-
-    
 }
