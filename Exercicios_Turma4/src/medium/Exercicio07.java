@@ -1,7 +1,5 @@
 package medium;
 
-import javax.swing.JOptionPane;
-
 public class Exercicio07 {
 
   // Exercício 7 - Faça um algoritmo para ler todos os meses do ano, armazene em
