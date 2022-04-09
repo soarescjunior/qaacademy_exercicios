@@ -7,23 +7,52 @@ public class Exercicio04 {
     // E toda vez que resultado chegar ou ultrapassar 1000,
     // faça que o resultado das multiplicações volte a ser 1.
 
-    public static void main(String[] args) {
+    public int[] multiplicacaoDeZeroAMil() {
 
-        int numero=1 , saldo =1;
+        int i=1; 
+        int saldo =1;
 
-        while(numero <= 1000){
+        int [] vetorSoma = new int[1001];
 
-            saldo = numero * saldo;
-
+        while(i <= 1000){
+            vetorSoma[i] = saldo;
+            saldo = i * saldo;
+            
             if( saldo >= 1000){
 
                 saldo = 1;
 
             }
-               numero++;
-
-               System.out.println(saldo);
+               i++;
+              
         }
+
+        return vetorSoma;
+        
+
+    }
+
+        public int[] itercaoDeZeroAMil() {
+
+            int i=1; 
+            int saldo =1;
+    
+            int [] vetorIteracao = new int[1001];
+    
+            while(i <= 1000){
+    
+                saldo = i * saldo;
+                vetorIteracao[i] = i;
+                if( saldo >= 1000){
+    
+                    saldo = 1;
+    
+                }
+                   i++;
+    
+                  // System.out.println(saldo);
+            }
+            return vetorIteracao;
 
     }
 
