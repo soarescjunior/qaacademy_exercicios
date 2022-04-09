@@ -1,0 +1,14 @@
+/target/
+.classpath
+../pom.xml
+../.classpath
+        ../.project
+        ../.settings/
+        .classpath
+        .gitignore
+        .project
+        .settings/
+        bin/.gitignore
+        pom.xml
+         ../pom.xml
+         
