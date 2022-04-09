@@ -8,14 +8,14 @@ public class Exercicio05 {
 
     public String calculaOperracoesAritimeticas( int numeroUm, int numeroDois, int numeroTres) {
         
-        int soma, subtração, divisao, multiplicacao;
+        int soma, subtracao, divisao, multiplicacao;
         
         soma = numeroUm + numeroDois + numeroTres;
-        subtração = numeroUm - numeroDois - numeroTres;
+        subtracao = numeroUm - numeroDois - numeroTres;
         multiplicacao = numeroUm * numeroDois * numeroTres;
         divisao = soma / 3;
 
-        return "A soma é: " + soma + "\n" + "A subtração é: " + subtração 
+        return "A soma é: " + soma + "\n" + "A subtração é: " + subtracao 
         + "\n" + "A multiplicação: " + multiplicacao + "\n" + "A divisao é: " + divisao ;
     
     }
