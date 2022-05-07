@@ -8,7 +8,7 @@ public class Execucao_Exercicio07_easy {
 
         Exercicio07 executarExercicio07 = new Exercicio07();
 
-        System.out.printf(executarExercicio07.calcularExibirValorINSS(3134.39));
+        System.out.printf(executarExercicio07.calcularExibirValorINSS(1045.00));
 
     }
 
